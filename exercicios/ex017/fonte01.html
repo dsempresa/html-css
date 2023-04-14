@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+          @font-face {
+            font-family: 'Love';
+            src: url('fontes/love\ story\ ttf.ttf') format('opentype'), url(fontes/love\ story\ ttf.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+          }
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 15px;
+            font-weight: 600;
+            /*weight = peso
+            width = largura
+            height = altura */
+        } 
+        h1 {
+            /*shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 2em 'Love', sans-serif;
+        }
+        h2 {
+            font: bolder 1em 'Love', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eius. Tempore veniam maxime voluptas aliquid facere necessitatibus tempora cupiditate consectetur, non, maiores officia architecto sit repellendus, in ipsa illum. Quibusdam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sapiente laboriosam porro sequi, perspiciatis odit aperiam, provident officiis omnis quae atque sint consectetur tenetur officia eveniet dolorem quod? Delectus, unde?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates assumenda impedit officia iure excepturi labore odio minima obcaecati architecto blanditiis, voluptate, illum eum inventore vel, ex aperiam voluptas? Nostrum, laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et, eligendi nobis eaque eveniet explicabo sunt incidunt accusantium modi praesentium reprehenderit dolore natus minus amet cupiditate distinctio aperiam. Mollitia, repellendus.</p>
+    
+</body>
+</html>
